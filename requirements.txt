@@ -1,0 +1,17 @@
+ai2thor
+allenact
+allenact-plugins[ithor]
+networkx
+shapely
+plotly
+nbformat
+pandas
+scipy
+pre-commit
+ai2thor-colab
+black==22.3.0
+prior
+canonicaljson
+transformers
+datasets
+prior

@@ -1,0 +1,416 @@
+{
+  "thing": [
+    "thing",
+    "object"
+  ],
+  "sphere": [
+    "sphere",
+    "ball"
+  ],
+  "cube": [
+    "cube",
+    "block"
+  ],
+  "large": [
+    "large",
+    "big"
+  ],
+  "small": [
+    "small",
+    "tiny"
+  ],
+  "metal": [
+    "metallic",
+    "metal",
+    "shiny"
+  ],
+  "rubber": [
+    "rubber",
+    "matte"
+  ],
+  "left": [
+    "left of",
+    "to the left of",
+    "on the left side of"
+  ],
+  "right": [
+    "right of",
+    "to the right of",
+    "on the right side of"
+  ],
+  "behind": [
+    "behind"
+  ],
+  "front": [
+    "in front of"
+  ],
+  "above": [
+    "above"
+  ],
+  "below": [
+    "below"
+  ],
+  "contains": [
+    "holding"
+  ],
+  "on": [
+    "on"
+  ],
+  "adjacent": [
+    "next to"
+  ],
+  "near": [
+    "close to"
+  ],
+  "lighterthan": [
+    "lighter than"
+  ],
+  "heavierthan": [
+    "heavier than"
+  ],
+  "largerthan": [
+    "larger than"
+  ],
+  "smallerthan": [
+    "smaller than"
+  ],
+  "longerthan": [
+    "longer than"
+  ],
+  "shorterthan": [
+    "shorter than"
+  ],
+  "WineBottle": [
+    "wine bottle"
+  ],
+  "CounterTop": [
+    "countertop"
+  ],
+  "Ladle": [
+    "ladle"
+  ],
+  "Toilet": [
+    "toilet"
+  ],
+  "Shelf": [
+    "shelf"
+  ],
+  "WashingMachine": [
+    "washing machine"
+  ],
+  "DishSponge": [
+    "dish spong"
+  ],
+  "FloorLamp": [
+    "floor lamp"
+  ],
+  "KeyChain": [
+    "key chain"
+  ],
+  "Painting": [
+    "painting"
+  ],
+  "GarbageCan": [
+    "trash can"
+  ],
+  "Lettuce": [
+    "lettuce"
+  ],
+  "Plate": [
+    "plate"
+  ],
+  "Bread": [
+    "bread"
+  ],
+  "CD": [
+    "CD"
+  ],
+  "DiningTable": [
+    "dining table"
+  ],
+  "Statue": [
+    "statue"
+  ],
+  "Candle": [
+    "candle"
+  ],
+  "Potato": [
+    "potato"
+  ],
+  "Knife": [
+    "knife"
+  ],
+  "Apple": [
+    "apple"
+  ],
+  "Book": [
+    "book"
+  ],
+  "Faucet": [
+    "faucet"
+  ],
+  "Fork": [
+    "fork"
+  ],
+  "Doorframe": [
+    "door frame"
+  ],
+  "SinkBasin": [
+    "sink basin"
+  ],
+  "Window": [
+    "window"
+  ],
+  "SaltShaker": [
+    "salt shaker"
+  ],
+  "Watch": [
+    "watch"
+  ],
+  "Sofa": [
+    "sofa"
+  ],
+  "Drawer": [
+    "drawer"
+  ],
+  "PepperShaker": [
+    "pepper shaker"
+  ],
+  "HousePlant": [
+    "house plant"
+  ],
+  "Mug": [
+    "mug"
+  ],
+  "Bed": [
+    "bed"
+  ],
+  "Doorway": [
+    "doorway"
+  ],
+  "TeddyBear": [
+    "teddy bear"
+  ],
+  "TissueBox": [
+    "tissue box"
+  ],
+  "Toaster": [
+    "toaster"
+  ],
+  "TVStand": [
+    "TV stand"
+  ],
+  "Television": [
+    "television", "TV"
+  ],
+  "ArmChair": [
+    "armchair"
+  ],
+  "AlarmClock": [
+    "alarm clock"
+  ],
+  "Dresser": [
+    "dresser"
+  ],
+  "Box": [
+    "box"
+  ],
+  "CellPhone": [
+    "cell phone"
+  ],
+  "Kitchen": [
+    "kitchen"
+  ],
+  "Cart": [
+    "cart"
+  ],
+  "DeskLamp": [
+    "desk lamp"
+  ],
+  "Sink": [
+    "sink"
+  ],
+  "RemoteControl": [
+    "remote control"
+  ],
+  "PaperTowelRoll": [
+    "paper towel roll"
+  ],
+  "ShelvingUnit": [
+    "shelving unit"
+  ],
+  "Spatula": [
+    "spatula"
+  ],
+  "Fridge": [
+    "fridge"
+  ],
+  "Vase": [
+    "vase"
+  ],
+  "TennisRacket": [
+    "tennis racket"
+  ],
+  "Pan": [
+    "pan"
+  ],
+  "Cup": [
+    "cup"
+  ],
+  "DogBed": [
+    "dog bed"
+  ],
+  "Pen": [
+    "pen"
+  ],
+  "Stool": [
+    "stool"
+  ],
+  "SoapBottle": [
+    "soap bottle"
+  ],
+  "CoffeeMachine": [
+    "coffee machine"
+  ],
+  "SoapBar": [
+    "soap bar"
+  ],
+  "SprayBottle": [
+    "spray bottle"
+  ],
+  "Bedroom": [
+    "bedroom"
+  ],
+  "Chair": [
+    "chair"
+  ],
+  "Kettle": [
+    "kettle"
+  ],
+  "BasketBall": [
+    "basketball"
+  ],
+  "Egg": [
+    "egg"
+  ],
+  "ToiletPaper": [
+    "toilet paper"
+  ],
+  "LivingRoom": [
+    "living room"
+  ],
+  "BaseballBat": [
+    "baseball bat"
+  ],
+  "Bowl": [
+    "bowl"
+  ],
+  "Bathroom": [
+    "bathroom"
+  ],
+  "Pillow": [
+    "pillow"
+  ],
+  "Spoon": [
+    "spoon"
+  ],
+  "Safe": [
+    "safe"
+  ],
+  "SideTable": [
+    "side table"
+  ],
+  "CreditCard": [
+    "credit card"
+  ],
+  "GarbageBag": [
+    "garbage bag"
+  ],
+  "Laptop": [
+    "laptop"
+  ],
+  "LaundryHamper": [
+    "laundry hamper"
+  ],
+  "Pot": [
+    "pot"
+  ],
+  "Bottle": [
+    "bottle"
+  ],
+  "Newspaper": [
+    "newspaper"
+  ],
+  "Tomato": [
+    "tomato"
+  ],
+  "Plunger": [
+    "plunger"
+  ],
+  "Ottoman": [
+    "ottoman"
+  ],
+  "Desk": [
+    "desk"
+  ],
+  "Pencil": [
+    "pencil"
+  ],
+  "ButterKnife": [
+    "butter knife"
+  ],
+  "Green": [
+    "green"
+  ],
+  "Gold": [
+    "gold"
+  ],
+  "Yellow": [
+    "yellow"
+  ],
+  "Blue_Green": [
+    "blue and green"
+  ],
+  "Orange": [
+    "orange"
+  ],
+  "Red_Orange": [
+    "red and orange"
+  ],
+  "Bronze": [
+    "bronze"
+  ],
+  "Violet": [
+    "violet"
+  ],
+  "Gray": [
+    "gray"
+  ],
+  "Black": [
+    "black"
+  ],
+  "Red": [
+    "red"
+  ],
+  "Tan": [
+    "tan"
+  ],
+  "Yellow_Green": [
+    "yellow and green"
+  ],
+  "Silver": [
+    "silver"
+  ],
+  "Brown": [
+    "brown"
+  ],
+  "Pink": [
+    "pink"
+  ],
+  "White": [
+    "white"
+  ],
+  "Blue": [
+    "blue"
+  ]
+}

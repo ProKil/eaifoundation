@@ -1,0 +1,5 @@
+from frozen_lm_qa import FrozenMemoryConfig
+
+FrozenMemoryConfig:
+    inp_features = 512
+    n_prompt_tokens = 3

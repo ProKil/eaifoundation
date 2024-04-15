@@ -1,0 +1,4 @@
+{
+	"num_train_processes": 16,
+	"train_gpu_ids": [1]
+}

@@ -1,0 +1,51 @@
+# Register necessary SeqIO Tasks/Mixtures.
+from __gin__ import dynamic_registration
+import frozen_lm_qa.seqio_task
+from frozen_lm_qa import model
+from frozen_lm_qa import network
+from frozen_lm_qa import feature_converter
+from frozen_lm_qa import checkpoints
+import t5x
+from t5x import utils
+
+include 't5x/configs/runs/finetune.gin'
+include 't5x/examples/t5/t5_1_1/base.gin'
+
+MIXTURE_OR_TASK_NAME = "memory_probe_qa"
+TASK_FEATURE_LENGTHS = {"targets": 256, "inputs": 256, "memory": 512}
+TRAIN_STEPS = 1_020_000  # 1000000 pre-trained steps + 20000 fine-tuning steps.
+DROPOUT_RATE = 0.0
+INITIAL_CHECKPOINT_PATH = "gs://t5-data/pretrained_models/t5x/t5_1_1_base/checkpoint_1000000"
+LOSS_NORMALIZING_FACTOR = 233472
+MODEL_DIR = "gs://haoz-bucket/t5x/frozen_memory_qa/base"
+USE_CACHED_TASKS=False
+
+
+MODEL = @model.MemoryQAModel()
+model.MemoryQAModel:
+  module = @network.FrozenTransformer()
+  input_vocabulary = %VOCABULARY
+  output_vocabulary = %VOCABULARY
+  optimizer_def = %OPTIMIZER
+  z_loss = %Z_LOSS
+  label_smoothing = %LABEL_SMOOTHING
+  loss_normalizing_factor = %LOSS_NORMALIZING_FACTOR
+  feature_converter_cls = @feature_converter.MemoryQAFeatureConverter
+
+network.FrozenTransformer:
+  config = @t5x.examples.t5.network.T5Config()
+  frozen_memory_config = @network.FrozenMemoryConfig()
+
+network.FrozenMemoryConfig:
+    inp_features=512
+    n_prompt_tokens=3
+
+train/utils.DatasetConfig:
+  pack = False
+
+train_eval/utils.DatasetConfig:
+  pack = False
+
+utils.RestoreCheckpointConfig:
+  fallback_to_scratch = True
+  state_transformation_fns = @checkpoints.MemoryQARestoreFromT5StateTransformationFns()

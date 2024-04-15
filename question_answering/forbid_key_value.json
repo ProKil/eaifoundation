@@ -1,0 +1,5 @@
+{
+    "Material": ["Food"],
+    "ObjectType": ["NodeTypeEnum.AGENT", "agent"],
+    "Color": []
+}

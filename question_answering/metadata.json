@@ -1,0 +1,282 @@
+{
+    "dataset": "DATASETNAME-v1.0",
+    "types": {
+      "Object": null,
+      "ObjectSet": null,
+      "Integer": null,
+      "Bool": null,
+      "Relation": [
+        "on", "contains", "adjacent", "near", "larger", "heavier"
+      ],
+      "ObjectType": ["Toilet", "Shelf", "WashingMachine", "DishSponge", "FloorLamp", "KeyChain", "Painting", "GarbageCan", "Lettuce", "Plate", "Bread", "CD", "DiningTable", "Statue", "Candle", "Potato", "Knife", "Apple", "Book", "Faucet", "Fork", "Doorframe", "SinkBasin", "Window", "SaltShaker", "Watch", "Sofa", "Drawer", "PepperShaker", "HousePlant", "Mug", "Bed", "Doorway", "TeddyBear", "TissueBox", "Toaster", "TVStand", "Television", "ArmChair", "AlarmClock", "Dresser", "Box", "CellPhone", "Kitchen", "Cart", "DeskLamp", "Sink", "RemoteControl", "PaperTowelRoll", "ShelvingUnit", "Spatula", "Ladle", "Fridge", "Vase", "TennisRacket", "WineBottle", "Pan", "Cup", "CounterTop", "DogBed", "Pen", "Stool", "SoapBottle", "CoffeeMachine", "SoapBar", "SprayBottle", "Bedroom", "NodeTypeEnum.AGENT", "Chair", "Kettle", "BasketBall", "Egg", "ToiletPaper", "LivingRoom", "BaseballBat", "Bowl", "Bathroom", "Pillow", "Spoon", "Safe", "SideTable", "CreditCard", "GarbageBag", "Laptop", "LaundryHamper", "Pot", "Bottle", "Newspaper", "Tomato", "Plunger", "Ottoman", "Desk", "Pencil", "ButterKnife"],
+      "Color": [
+        "Green",
+        "Gold",
+        "Yellow",
+        "Blue_Green",
+        "Orange",
+        "Red_Orange",
+        "Bronze",
+        "Violet",
+        "Gray",
+        "Black",
+        "Red",
+        "Tan",
+        "Yellow_Green",
+        "Silver",
+        "Brown",
+        "Pink",
+        "White",
+        "Blue"
+    ],
+    "Material": [
+      "Food",
+      "Plastic and Glass and Metal and Rubber",
+      "Wood and Glass",
+      "Ceramic and Organic",
+      "Metal and Wax",
+      "Metal and Plastic and Glass",
+      "Metal and Wood",
+      "Glass",
+      "Wood",
+      "Plastic and Glass",
+      "Metal and Fabric",
+      "Leather",
+      "Wood and Metal",
+      "Plastic and Fabric and Metal",
+      "Paper and Wood",
+      "Glass and Metal",
+      "Wood and Paper",
+      "Ceramic",
+      "Metal",
+      "Plastic",
+      "Metal and Glass",
+      "Wax",
+      "Metal and Plastic",
+      "Sponge",
+      "Fabric and Wood",
+      "Wood and Fabric",
+      "Leather and Metal",
+      "Plastic and Metal",
+      "Soap",
+      "Metal and Glass and Plastic",
+      "Fabric",
+      "Rubber and Wood",
+      "Plastic and Wood",
+      "Paper",
+      "Wood and Plastic",
+      "Paper and Plastic",
+      "Rubber",
+      "Stone"
+    ]
+    },
+    "functions": [
+      {
+        "name": "scene",
+        "inputs": [],
+        "output": "ObjectSet",
+        "terminal": false
+      },
+      {
+        "name": "filter_objecttype",
+        "inputs": ["ObjectSet"],
+        "side_inputs": ["ObjectType"],
+        "output": "ObjectSet",
+        "terminal": false
+      },
+      {
+        "name": "filter_color",
+        "inputs": ["ObjectSet"],
+        "side_inputs": ["Color"],
+        "output": "ObjectSet",
+        "terminal": false
+      },
+      {
+        "name": "filter_material",
+        "inputs": ["ObjectSet"],
+        "side_inputs": ["Material"],
+        "output": "ObjectSet",
+        "terminal": false
+      },
+      {
+        "name": "unique",
+        "inputs": ["ObjectSet"],
+        "output": "Object",
+        "terminal": false,
+        "properties": []
+      },
+      {
+        "name": "relate",
+        "inputs": ["Object"],
+        "side_inputs": ["Relation"],
+        "output": "ObjectSet",
+        "terminal": false
+      },
+      {
+        "name": "union",
+        "inputs": ["ObjectSet", "ObjectSet"],
+        "output": "ObjectSet",
+        "terminal": false
+      },
+      {
+        "name": "intersect",
+        "inputs": ["ObjectSet", "ObjectSet"],
+        "output": "ObjectSet",
+        "terminal": false
+      },
+      {
+        "name": "count",
+        "inputs": ["ObjectSet"],
+        "output": "Integer",
+        "terminal": true
+      },
+      {
+        "name": "query_color",
+        "inputs": ["Object"],
+        "output": "Color",
+        "terminal": true
+      },
+      {
+        "name": "query_material",
+        "inputs": ["Object"],
+        "output": "Material",
+        "terminal": true
+      },
+      {
+        "name": "query_objecttype",
+        "inputs": ["Object"],
+        "output": "ObjectType",
+        "terminal": true
+      },
+      {
+        "name": "exist",
+        "inputs": ["ObjectSet"],
+        "output": "Bool",
+        "terminal": true
+      },
+      {
+        "name": "equal_objecttype",
+        "inputs": ["ObjectType", "ObjectType"],
+        "output": "Bool",
+        "terminal": true
+      },
+      {
+        "name": "equal_color",
+        "inputs": ["Color", "Color"],
+        "output": "Bool",
+        "terminal": true
+      },
+      {
+        "name": "equal_material",
+        "inputs": ["Material", "Material"],
+        "output": "Bool",
+        "terminal": true
+      },
+      {
+        "name": "equal_integer",
+        "inputs": ["Integer", "Integer"],
+        "output": "Bool",
+        "terminal": true
+      },
+      {
+        "name": "less_than",
+        "inputs": ["Integer", "Integer"],
+        "output": "Bool",
+        "terminal": true
+      },
+      {
+        "name": "greater_than",
+        "inputs": ["Integer", "Integer"],
+        "output": "Bool",
+        "terminal": true
+      },
+      {
+        "name": "equal_object",
+        "inputs": ["Object", "Object"],
+        "output": "Bool",
+        "terminal": true
+      },
+      {
+        "name": "same_color",
+        "inputs": ["Object"],
+        "output": "ObjectSet",
+        "terminal": false
+      },
+      {
+        "name": "same_material",
+        "inputs": ["Object"],
+        "output": "ObjectSet",
+        "terminal": false
+      },
+      {
+        "name": "same_objecttype",
+        "inputs": ["Object"],
+        "output": "ObjectSet",
+        "terminal": false
+      },
+      {
+        "name": "filter",
+        "inputs": ["ObjectSet"],
+        "side_inputs": ["Color", "Material", "ObjectType"],
+        "output": "ObjectSet",
+        "terminal": false,
+        "template_only": true
+      },
+      {
+        "name": "filter_unique",
+        "inputs": ["ObjectSet"],
+        "side_inputs": ["Color", "Material", "ObjectType"],
+        "output": "Object",
+        "terminal": false,
+        "template_only": true
+      },
+      {
+        "name": "filter_count",
+        "inputs": ["ObjectSet"],
+        "side_inputs": ["Color", "Material", "ObjectType"],
+        "output": "Integer",
+        "terminal": true,
+        "template_only": true
+      },
+      {
+        "name": "filter_exist",
+        "inputs": ["ObjectSet"],
+        "side_inputs": ["Color", "Material", "ObjectType"],
+        "output": "Bool",
+        "terminal": true,
+        "template_only": true
+      },
+      {
+        "name": "relate_filter",
+        "inputs": ["Object"],
+        "side_inputs": ["Relation", "Color", "Material", "ObjectType"],
+        "output": "ObjectSet",
+        "terminal": false,
+        "template_only": true
+      },
+      {
+        "name": "relate_filter_unique",
+        "inputs": ["Object"],
+        "side_inputs": ["Relation", "Color", "Material", "ObjectType"],
+        "output": "Object",
+        "terminal": false,
+        "template_only": true
+      },
+      {
+        "name": "relate_filter_count",
+        "inputs": ["Object"],
+        "side_inputs": ["Relation", "Color", "Material", "ObjectType"],
+        "output": "Integer",
+        "terminal": false,
+        "template_only": true
+      },
+      {
+        "name": "relate_filter_exist",
+        "inputs": ["Object"],
+        "side_inputs": ["Relation", "Color", "Material", "ObjectType"],
+        "output": "Bool",
+        "terminal": false,
+        "template_only": true
+      }
+    ]
+  }
